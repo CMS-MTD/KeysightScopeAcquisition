@@ -13,8 +13,8 @@ Instructions for the acquisition and reconstruction part are here:
 *  The files created with the previous step are converted into ROOT TTree's using the h5py python package. This step requires the .h5 files for the 4 channels as input.
 *  First make sure you have the h5py package. If you have an existing python installation, do
 `pip install h5py`
-Run the conversion script
-`python conversion_h5.py --inputFiles 1 2 3 4`
+Run the conversion script 
+`python conversion_h5.py --run 1 --inputDir /20210317/ --channels 1 2 3 4`
 
 `python conversion_bin_fast.py --Run 6068`
 =======
