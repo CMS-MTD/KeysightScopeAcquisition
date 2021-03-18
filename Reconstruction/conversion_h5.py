@@ -23,10 +23,10 @@ print("Active channels: ", active_channel)
 f = []
 Channel = []
 for i in active_channel:
-    f.append(h5py.File('../data/'+args.inputDir+'Wavenewscope_CH'+str(i)+'_run'+args.run+'.h5', 'r')) #---Channel 1
+    f.append(h5py.File(args.inputDir+'Wavenewscope_CH'+str(i)+'_run'+args.run+'.h5', 'r')) #---Channel 1
     Channel.append(f[-1]['Waveforms']['Channel '+str(i)])
 ##---Prepare output file
-outputFile = '../data/'+args.inputDir+'output_run'+args.run+'.root'
+outputFile = args.inputDir+'output_run'+args.run+'.root'
 #if os.path.exists(outputFile):sys.exit("OUTPUT ALREADY EXISTS!!! " + outputFile)  
 outRoot = ROOT.TFile(outputFile, "RECREATE")
 outTree = ROOT.TTree("pulse","pulse")
