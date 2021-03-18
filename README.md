@@ -1,4 +1,4 @@
-# ETL_Agilent_MSO-X-92004A
+# KeysightScopeAcquisition
 Data acquisition and reconstruction for the Agilent MSO-X-92004A ocsilloscope.
 This is based on the Tektronix repository https://github.com/tommasoisi/Tektronix_DPO7254Control
 
@@ -17,3 +17,4 @@ Run the conversion script
 `python conversion_h5.py --inputFiles 1 2 3 4`
 
 `python conversion_bin_fast.py --Run 6068`
+=======
